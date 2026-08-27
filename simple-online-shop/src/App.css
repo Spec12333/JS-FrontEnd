@@ -1,0 +1,181 @@
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+html,
+body {
+  margin: 0;
+  background: #f8fafc;
+}
+
+body {
+  min-width: 320px;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border: 0;
+  background: #f8fafc;
+}
+
+#root > div {
+  width: min(1160px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+#root > div > h1 {
+  margin: 0 0 22px;
+  font-size: clamp(2.65rem, 6vw, 4.8rem);
+  font-weight: 850;
+  letter-spacing: -.075em;
+  line-height: .9;
+  color: #172033;
+}
+
+/* Products / Basket switch */
+#root > div > button {
+  margin: 0 0 32px;
+  padding: 11px 17px;
+  border: 1px solid #e4dbf4;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 7px 18px rgba(56, 31, 96, .08);
+  color: #6844c5;
+  cursor: pointer;
+  font: inherit;
+  font-size: .84rem;
+  font-weight: 800;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+#root > div > button:hover {
+  background: #fff;
+  box-shadow: 0 11px 22px rgba(56, 31, 96, .14);
+  transform: translateY(-2px);
+}
+
+#root > div > button:focus-visible,
+#root > div > div:has(> h2) button:focus-visible {
+  outline: 3px solid #c9b9ff;
+  outline-offset: 3px;
+}
+
+/* Shared panel */
+#root > div > div:has(> h2) {
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid #e3e8f0;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 20px 48px rgba(33, 49, 76, .1);
+}
+
+#root > div > div:has(> h2) > h2 {
+  margin: 0 0 26px;
+  color: #172033;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -.05em;
+  text-align: left;
+}
+
+/* Product cards */
+#root > div > div:has(> h2) > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+
+#root > div > div:has(> h2) > div > div {
+  display: flex;
+  min-height: 370px;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 18px;
+  border: 1px solid #e6ebf2;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(33, 49, 76, .07);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+#root > div > div:has(> h2) > div > div:hover {
+  box-shadow: 0 19px 34px rgba(33, 49, 76, .14);
+  transform: translateY(-5px);
+}
+
+#root > div > div:has(> h2) > div > div img {
+  order: 1;
+  width: calc(100% + 36px);
+  height: 215px;
+  margin: -18px -18px 0;
+  object-fit: cover;
+}
+
+#root > div > div:has(> h2) > div > div h2:first-child {
+  order: 2;
+  margin: 17px 0 4px;
+  color: #26202f;
+  font-size: 1.08rem;
+  font-weight: 750;
+  letter-spacing: -.025em;
+}
+
+#root > div > div:has(> h2) > div > div h2:nth-child(2) {
+  order: 3;
+  margin: 0 0 18px;
+  color: #7954d6;
+  font-size: .98rem;
+  font-weight: 850;
+}
+
+#root > div > div:has(> h2) > div > div button {
+  order: 4;
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 15px;
+  border: 0;
+  border-radius: 11px;
+  background: linear-gradient(115deg, #6542d9, #a456df);
+  box-shadow: 0 8px 16px rgba(101, 68, 219, .23);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: .86rem;
+  font-weight: 800;
+  transition: filter 160ms ease, transform 160ms ease;
+}
+
+#root > div > div:has(> h2) > div > div button:hover { filter: brightness(1.08); transform: translateY(-1px); }
+
+/* Basket table */
+#root > div > div:has(> h2) > table { width: 100%; border-collapse: collapse; text-align: left; }
+#root > div > div:has(> h2) > table th { padding: 0 12px 13px; color: #8a96a8; font-size: .68rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+#root > div > div:has(> h2) > table th:first-child, #root > div > div:has(> h2) > table td:first-child { padding-left: 0; }
+#root > div > div:has(> h2) > table th:last-child, #root > div > div:has(> h2) > table td:last-child { padding-right: 0; text-align: right; }
+#root > div > div:has(> h2) > table td { padding: 18px 12px; border-top: 1px solid #e7ecf3; color: #667387; font-size: .9rem; }
+#root > div > div:has(> h2) > table td:first-child, #root > div > div:has(> h2) > table td:nth-child(4) { color: #202b3d; font-weight: 800; }
+#root > div > div:has(> h2) > table td:last-child { white-space: nowrap; }
+#root > div > div:has(> h2) > table button { width: 30px; height: 30px; margin-left: 5px; border: 1px solid #e7dff0; border-radius: 9px; background: #fff; color: #7251ce; cursor: pointer; font: inherit; font-size: .78rem; font-weight: 850; transition: background 160ms ease, transform 160ms ease; }
+#root > div > div:has(> h2) > table button:hover { background: #f1ebff; transform: translateY(-1px); }
+#root > div > div:has(> h2) > table td:last-child button:first-child { color: #c25879; }
+#root > div > div:has(> h2) > table td:last-child button:first-child:hover { background: #fff0f4; }
+
+/* Basket total and checkout */
+.basket-summary { display: flex; align-items: center; justify-content: flex-end; gap: 14px; margin-top: 24px; padding-top: 20px; border-top: 1px solid #e7ecf3; color: #667387; }
+.basket-summary strong { color: #172033; font-size: 1.35rem; }
+.basket-summary button { padding: 12px 18px; border: 0; border-radius: 11px; background: linear-gradient(115deg, #6542d9, #a456df); box-shadow: 0 8px 16px rgba(101, 68, 219, .23); color: #fff; cursor: pointer; font: inherit; font-size: .86rem; font-weight: 800; }
+.basket-summary button:disabled { cursor: not-allowed; opacity: .5; }
+
+@media (max-width: 640px) {
+  #root > div { width: min(100% - 28px, 1160px); padding: 38px 0 56px; }
+  #root > div > div:has(> h2) { overflow-x: auto; border-radius: 20px; }
+  #root > div > div:has(> h2) > table { min-width: 600px; }
+  #root > div > div:has(> h2) > div { grid-template-columns: 1fr; }
+  .basket-summary { justify-content: flex-start; }
+}
