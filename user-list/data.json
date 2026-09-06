@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "surname": "Johnson",
+      "gender": "Female",
+      "salary": 52000
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "surname": "Smith",
+      "gender": "Male",
+      "salary": 58000
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "surname": "Brown",
+      "gender": "Male",
+      "salary": 61000
+    },
+    {
+      "id": 4,
+      "name": "Diana",
+      "surname": "Garcia",
+      "gender": "Female",
+      "salary": 67000
+    },
+    {
+      "id": 5,
+      "name": "Ethan",
+      "surname": "Wilson",
+      "gender": "Male",
+      "salary": 72000
+    },
+    {
+      "id": 6,
+      "name": "Fiona",
+      "surname": "Martinez",
+      "gender": "Female",
+      "salary": 55000
+    },
+    {
+      "id": 7,
+      "name": "George",
+      "surname": "Davis",
+      "gender": "Male",
+      "salary": 63000
+    },
+    {
+      "id": 8,
+      "name": "Hannah",
+      "surname": "Taylor",
+      "gender": "Female",
+      "salary": 69000
+    },
+    {
+      "id": 9,
+      "name": "Ian",
+      "surname": "Anderson",
+      "gender": "Male",
+      "salary": 76000
+    },
+    {
+      "id": 10,
+      "name": "Julia",
+      "surname": "Thomas",
+      "gender": "Female",
+      "salary": 81000
+    },
+    {
+      "name": "John",
+      "surname": "Morgan",
+      "gender": "Male",
+      "salary": 100000,
+      "id": 11
+    },
+    {
+      "name": "Morgan",
+      "surname": "Freeman",
+      "gender": "Male",
+      "salary": 120050,
+      "id": 12
+    },
+    {
+      "name": "Nathan",
+      "surname": "Smith",
+      "gender": "Male",
+      "salary": 67670,
+      "id": 14
+    },
+    {
+      "name": "Bob",
+      "surname": "Marlie",
+      "gender": "Male",
+      "salary": 150000,
+      "id": 15
+    },
+    {
+      "name": "Maria",
+      "surname": "Leon",
+      "gender": "Female",
+      "salary": 200000,
+      "id": 16
+    }
+  ]
+}

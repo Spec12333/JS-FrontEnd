@@ -1,0 +1,112 @@
+#root { min-height: 100vh; }
+
+#root > div {
+  width: min(1120px, calc(100% - 48px)); margin: 0 auto;
+  padding: clamp(42px, 7vw, 84px) 0;
+}
+
+#root > div > div {
+  position: relative; overflow: hidden; border: 1px solid rgba(224, 231, 255, .15);
+  border-radius: 20px; background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.055));
+  box-shadow: 0 24px 60px rgba(9,14,45,.22), inset 0 1px 0 rgba(255,255,255,.09);
+  backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+}
+
+#root > div > div::before {
+  position: absolute; inset: 0; pointer-events: none; content: "";
+  background: linear-gradient(115deg, rgba(255,255,255,.07), transparent 38%);
+}
+
+#root > div > div:first-child { z-index: 1; padding: clamp(24px, 4vw, 38px); margin-bottom: 28px; }
+#root > div > div:last-child { padding: clamp(24px, 4vw, 36px); }
+
+h2 {
+  position: relative; z-index: 1; margin: 0; color: #f8faff;
+  font-size: clamp(1.45rem, 2.8vw, 2rem); font-weight: 700; letter-spacing: -.035em; line-height: 1.15;
+}
+
+#root > div > div h2::after {
+  display: block; width: 42px; height: 3px; margin-top: 13px; border-radius: 99px; content: "";
+  background: linear-gradient(90deg, #8ea3ff, #a78bfa);
+}
+
+#root > div > div:first-child form {
+  position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+  align-items: end; gap: 16px; margin-top: 29px;
+}
+
+#root > div > div:first-child form > div { min-width: 0; }
+#root > div > div:first-child form > div:not(:last-child) { display: flex; flex-direction: column; gap: 8px; }
+
+#root > div > div:first-child label {
+  order: 1; color: #c7cee8; font-size: .72rem; font-weight: 700; letter-spacing: .085em; text-transform: uppercase;
+}
+
+#root > div > div:first-child input,
+#root > div > div:first-child select {
+  order: 2; width: 100%; min-height: 48px; padding: 0 14px; border: 1px solid rgba(204,214,255,.2);
+  border-radius: 10px; outline: none; appearance: none; background-color: rgba(11,18,57,.28); color: #f9faff;
+  font: inherit; font-size: .92rem;
+  transition: border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+#root > div > div:first-child select {
+  cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, #bdc8ff 50%), linear-gradient(135deg, #bdc8ff 50%, transparent 50%);
+  background-position: calc(100% - 18px) 20px, calc(100% - 13px) 20px;
+  background-repeat: no-repeat; background-size: 5px 5px, 5px 5px;
+}
+
+#root > div > div:first-child select option { background: #202958; color: #f9faff; }
+
+#root > div > div:first-child input:focus,
+#root > div > div:first-child select:focus {
+  border-color: rgba(163,176,255,.88); background-color: rgba(16,25,68,.52); box-shadow: 0 0 0 4px rgba(126,112,255,.19);
+}
+
+#root > div > div:first-child input:hover,
+#root > div > div:first-child select:hover { border-color: rgba(204,214,255,.38); }
+
+#root > div > div:first-child p { order: 3; margin: -1px 0 0; color: #ffd4df; font-size: .75rem; font-weight: 500; line-height: 1.35; }
+
+#root > div > div:first-child button {
+  min-height: 48px; padding: 0 25px; border: 1px solid rgba(225,231,255,.2); border-radius: 10px;
+  background: linear-gradient(135deg, #6676e9, #7b5cce); box-shadow: 0 10px 22px rgba(66,61,179,.36), inset 0 1px 0 rgba(255,255,255,.2);
+  color: #fff; cursor: pointer; font: inherit; font-size: .9rem; font-weight: 700; letter-spacing: .01em; white-space: nowrap;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+#root > div > div:first-child button:hover { box-shadow: 0 14px 27px rgba(66,61,179,.48), inset 0 1px 0 rgba(255,255,255,.25); filter: brightness(1.08); transform: translateY(-2px); }
+#root > div > div:first-child button:active { transform: translateY(0); }
+#root > div > div:first-child button:focus-visible { outline: 3px solid rgba(193,202,255,.62); outline-offset: 3px; }
+
+table {
+  position: relative; z-index: 1; width: 100%; margin-top: 28px; overflow: hidden; border: 1px solid rgba(218,226,255,.13);
+  border-collapse: separate; border-radius: 12px; border-spacing: 0; background: rgba(9,16,48,.2); color: #e9edff; text-align: left;
+}
+
+thead { background: rgba(177,188,255,.09); }
+th, td { padding: 17px 22px; border-bottom: 1px solid rgba(218,226,255,.1); }
+th { color: #bfc8e9; font-size: .72rem; font-weight: 700; letter-spacing: .085em; text-transform: uppercase; }
+td { font-size: .94rem; font-weight: 450; }
+tbody tr { transition: background-color 180ms ease, color 180ms ease; }
+tbody tr:hover { background: rgba(160,171,255,.1); }
+tbody tr:last-child td { border-bottom: 0; }
+td:first-child { width: 84px; color: #aeb9df; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .82rem; }
+td:last-child { color: #d7e0ff; font-weight: 700; }
+
+@media (max-width: 900px) {
+  #root > div > div:first-child form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #root > div > div:first-child form > div:last-child { grid-column: span 2; }
+  #root > div > div:first-child button { width: 100%; }
+}
+
+@media (max-width: 620px) {
+  #root > div { width: min(100% - 28px, 1120px); padding: 32px 0; }
+  #root > div > div { border-radius: 16px; }
+  #root > div > div:first-child, #root > div > div:last-child { padding: 22px; }
+  #root > div > div:first-child form { grid-template-columns: 1fr; gap: 15px; margin-top: 25px; }
+  #root > div > div:first-child form > div:last-child { grid-column: auto; }
+  table { display: block; overflow-x: auto; white-space: nowrap; }
+  th, td { padding: 15px 16px; }
+}
