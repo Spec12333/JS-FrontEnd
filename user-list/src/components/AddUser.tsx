@@ -10,8 +10,8 @@ export const AddUser:React.FC<Props> = ({onAdd}) => {
     
     const handleAdd:SubmitHandler<Account> = data => {
         onAdd(data)
-        
     }
+    
     return (
         <div>
             <h2>

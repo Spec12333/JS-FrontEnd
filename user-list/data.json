@@ -104,6 +104,20 @@
       "gender": "Female",
       "salary": 200000,
       "id": 16
+    },
+    {
+      "name": "Edward",
+      "surname": "Poghosyan",
+      "gender": "Male",
+      "salary": 50000,
+      "id": 17
+    },
+    {
+      "name": "Armen",
+      "surname": "Hovakimyan",
+      "gender": "Male",
+      "salary": 300000,
+      "id": 18
     }
   ]
 }
