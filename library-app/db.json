@@ -1,0 +1,390 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Crime and Punishment",
+      "authorId": 2,
+      "year": 1866,
+      "genre": "psychological novel",
+      "available": true
+    },
+    {
+      "id": 2,
+      "title": "Pride and Prejudice",
+      "authorId": 3,
+      "year": 1813,
+      "genre": "romance",
+      "available": false
+    },
+    {
+      "id": 3,
+      "title": "One Hundred Years of Solitude",
+      "authorId": 6,
+      "year": 1967,
+      "genre": "magical realism",
+      "available": true
+    },
+    {
+      "id": 4,
+      "title": "The Hobbit",
+      "authorId": 12,
+      "year": 1937,
+      "genre": "fantasy",
+      "available": true
+    },
+    {
+      "id": 5,
+      "title": "Nineteen Eighty-Four",
+      "authorId": 8,
+      "year": 1949,
+      "genre": "dystopia",
+      "available": true
+    },
+    {
+      "id": 6,
+      "title": "Murder on the Orient Express",
+      "authorId": 11,
+      "year": 1934,
+      "genre": "mystery",
+      "available": true
+    },
+    {
+      "id": 7,
+      "title": "War and Peace",
+      "authorId": 1,
+      "year": 1869,
+      "genre": "historical novel",
+      "available": false
+    },
+    {
+      "id": 8,
+      "title": "Norwegian Wood",
+      "authorId": 10,
+      "year": 1987,
+      "genre": "novel",
+      "available": true
+    },
+    {
+      "id": 9,
+      "title": "The Metamorphosis",
+      "authorId": 9,
+      "year": 1915,
+      "genre": "novella",
+      "available": true
+    },
+    {
+      "id": 10,
+      "title": "Things Fall Apart",
+      "authorId": 15,
+      "year": 1958,
+      "genre": "novel",
+      "available": true
+    },
+    {
+      "id": 11,
+      "title": "Great Expectations",
+      "authorId": 4,
+      "year": 1861,
+      "genre": "novel",
+      "available": false
+    },
+    {
+      "id": 12,
+      "title": "The Old Man and the Sea",
+      "authorId": 7,
+      "year": 1952,
+      "genre": "novella",
+      "available": true
+    },
+    {
+      "id": 13,
+      "title": "The Master and Margarita",
+      "authorId": 14,
+      "year": 1967,
+      "genre": "satire",
+      "available": true
+    },
+    {
+      "id": 14,
+      "title": "Les Misérables",
+      "authorId": 5,
+      "year": 1862,
+      "genre": "historical novel",
+      "available": true
+    },
+    {
+      "id": 15,
+      "title": "Mrs Dalloway",
+      "authorId": 16,
+      "year": 1925,
+      "genre": "modernist novel",
+      "available": true
+    },
+    {
+      "id": 16,
+      "title": "The Adventures of Tom Sawyer",
+      "authorId": 13,
+      "year": 1876,
+      "genre": "adventure",
+      "available": false
+    },
+    {
+      "id": 17,
+      "title": "Anna Karenina",
+      "authorId": 1,
+      "year": 1878,
+      "genre": "novel",
+      "available": true
+    },
+    {
+      "id": 18,
+      "title": "And Then There Were None",
+      "authorId": 11,
+      "year": 1939,
+      "genre": "mystery",
+      "available": true
+    },
+    {
+      "id": 19,
+      "title": "The Trial",
+      "authorId": 9,
+      "year": 1925,
+      "genre": "novel",
+      "available": false
+    },
+    {
+      "id": 20,
+      "title": "Kafka on the Shore",
+      "authorId": 10,
+      "year": 2002,
+      "genre": "magical realism",
+      "available": true
+    },
+    {
+      "id": 21,
+      "title": "A Tale of Two Cities",
+      "authorId": 4,
+      "year": 1859,
+      "genre": "historical novel",
+      "available": true
+    },
+    {
+      "id": 22,
+      "title": "Emma",
+      "authorId": 3,
+      "year": 1815,
+      "genre": "romance",
+      "available": true
+    },
+    {
+      "id": 23,
+      "title": "The Brothers Karamazov",
+      "authorId": 2,
+      "year": 1880,
+      "genre": "philosophical novel",
+      "available": true
+    },
+    {
+      "id": 24,
+      "title": "Animal Farm",
+      "authorId": 8,
+      "year": 1945,
+      "genre": "political satire",
+      "available": false
+    },
+    {
+      "id": 25,
+      "title": "A Farewell to Arms",
+      "authorId": 7,
+      "year": 1929,
+      "genre": "war novel",
+      "available": true
+    },
+    {
+      "id": 26,
+      "title": "The Hunchback of Notre-Dame",
+      "authorId": 5,
+      "year": 1831,
+      "genre": "historical novel",
+      "available": true
+    },
+    {
+      "id": 27,
+      "title": "Love in the Time of Cholera",
+      "authorId": 6,
+      "year": 1985,
+      "genre": "romance",
+      "available": true
+    },
+    {
+      "id": 28,
+      "title": "The Fellowship of the Ring",
+      "authorId": 12,
+      "year": 1954,
+      "genre": "fantasy",
+      "available": false
+    },
+    {
+      "id": 29,
+      "title": "Adventures of Huckleberry Finn",
+      "authorId": 13,
+      "year": 1884,
+      "genre": "adventure",
+      "available": true
+    },
+    {
+      "id": 30,
+      "title": "To the Lighthouse",
+      "authorId": 16,
+      "year": 1927,
+      "genre": "modernist novel",
+      "available": true
+    },
+    {
+      "id": 31,
+      "title": "Heart of a Dog",
+      "authorId": 14,
+      "year": 1968,
+      "genre": "satire",
+      "available": true
+    },
+    {
+      "id": 32,
+      "title": "No Longer at Ease",
+      "authorId": 15,
+      "year": 1960,
+      "genre": "novel",
+      "available": true
+    },
+    {
+      "id": 33,
+      "title": "The Idiot",
+      "authorId": 2,
+      "year": 1869,
+      "genre": "novel",
+      "available": false
+    },
+    {
+      "id": 34,
+      "title": "Sense and Sensibility",
+      "authorId": 3,
+      "year": 1811,
+      "genre": "romance",
+      "available": true
+    },
+    {
+      "id": 35,
+      "title": "The Death of Ivan Ilyich",
+      "authorId": 1,
+      "year": 1886,
+      "genre": "novella",
+      "available": true
+    },
+    {
+      "id": 36,
+      "title": "Oliver Twist",
+      "authorId": 4,
+      "year": 1838,
+      "genre": "novel",
+      "available": true
+    },
+    {
+      "id": 37,
+      "title": "The Sun Also Rises",
+      "authorId": 7,
+      "year": 1926,
+      "genre": "novel",
+      "available": false
+    },
+    {
+      "id": 38,
+      "title": "The Castle",
+      "authorId": 9,
+      "year": 1926,
+      "genre": "novel",
+      "available": true
+    },
+    {
+      "id": 39,
+      "title": "The Wind-Up Bird Chronicle",
+      "authorId": 10,
+      "year": 1994,
+      "genre": "magical realism",
+      "available": true
+    },
+    {
+      "id": 40,
+      "title": "The Murder of Roger Ackroyd",
+      "authorId": 11,
+      "year": 1926,
+      "genre": "mystery",
+      "available": true
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Leo Tolstoy"
+    },
+    {
+      "id": 2,
+      "name": "Fyodor Dostoevsky"
+    },
+    {
+      "id": 3,
+      "name": "Jane Austen"
+    },
+    {
+      "id": 4,
+      "name": "Charles Dickens"
+    },
+    {
+      "id": 5,
+      "name": "Victor Hugo"
+    },
+    {
+      "id": 6,
+      "name": "Gabriel García Márquez"
+    },
+    {
+      "id": 7,
+      "name": "Ernest Hemingway"
+    },
+    {
+      "id": 8,
+      "name": "George Orwell"
+    },
+    {
+      "id": 9,
+      "name": "Franz Kafka"
+    },
+    {
+      "id": 10,
+      "name": "Haruki Murakami"
+    },
+    {
+      "id": 11,
+      "name": "Agatha Christie"
+    },
+    {
+      "id": 12,
+      "name": "J.R.R. Tolkien"
+    },
+    {
+      "id": 13,
+      "name": "Mark Twain"
+    },
+    {
+      "id": 14,
+      "name": "Mikhail Bulgakov"
+    },
+    {
+      "id": 15,
+      "name": "Chinua Achebe"
+    },
+    {
+      "id": 16,
+      "name": "Virginia Woolf"
+    }
+  ]
+}
